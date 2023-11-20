@@ -1,0 +1,198 @@
+12:13:19 (46951) INFO ConfigReader Using stryker.conf.js in the current working directory.
+12:13:19 (46951) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:13:19 (46951) DEBUG ConfigReader Loading config stryker.conf.js
+12:13:19 (46951) DEBUG PluginLoader Loading stryker-* from /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules
+12:13:19 (46951) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+12:13:19 (46951) DEBUG PluginLoader Loading plugins stryker-html-reporter
+12:13:19 (46951) DEBUG PluginLoader Loading plugins /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/reporters/index.js
+12:13:19 (46951) DEBUG PluginLoader Loading plugins /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/mutators/index.js
+12:13:19 (46951) INFO InputFileResolver Found 1 of 2 file(s) to be mutated.
+12:13:19 (46951) DEBUG InputFileResolver All input files: [
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/src/myModule.js",
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/test/myModule.test.js"
+]
+12:13:19 (46951) DEBUG InputFileResolver Files to mutate: [
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/src/myModule.js"
+]
+12:13:19 (46951) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:13:19 (46951) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:13:19 (46951) DEBUG Sandbox Creating a sandbox for files in /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/.stryker-tmp/sandbox3928958
+12:13:19 (46951) DEBUG Sandbox Creating test runner 0
+12:13:19 (46951) DEBUG ChildProcessProxy Starting /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 46974
+12:13:20 (46951) TRACE ChildProcessProxy /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+            ^
+
+Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:946:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+      at process.emit (node:events:513:28)
+      at emit (node:internal/child_process:946:14)
+      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+}
+
+12:13:20 (46951) WARN ChildProcessProxy Child process [pid 46974] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+	            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+	            ^
+	
+	Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	    at process.emit (node:events:513:28)
+	    at emit (node:internal/child_process:946:14)
+	    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+	  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+	      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+	      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	      at process.emit (node:events:513:28)
+	      at emit (node:internal/child_process:946:14)
+	      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+	}
+	 ChildProcessCrashedError: Child process [pid 46974] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+	            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+	            ^
+	
+	Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	    at process.emit (node:events:513:28)
+	    at emit (node:internal/child_process:946:14)
+	    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+	  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+	      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+	      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	      at process.emit (node:events:513:28)
+	      at emit (node:internal/child_process:946:14)
+	      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+	}
+	
+    at ChildProcessProxy.handleUnexpectedExit (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxy.js:150:33)
+    at ChildProcess.emit (node:events:513:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12) {
+  innerError: undefined,
+  pid: 46974,
+  exitCode: 1,
+  signal: null
+}
+12:23:21 (52308) INFO ConfigReader Using stryker.conf.js in the current working directory.
+12:23:21 (52308) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:23:21 (52308) DEBUG ConfigReader Loading config stryker.conf.js
+12:23:21 (52308) DEBUG PluginLoader Loading stryker-* from /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules
+12:23:21 (52308) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+12:23:21 (52308) DEBUG PluginLoader Loading plugins stryker-html-reporter
+12:23:21 (52308) DEBUG PluginLoader Loading plugins /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/reporters/index.js
+12:23:21 (52308) INFO InputFileResolver Found 1 of 2 file(s) to be mutated.
+12:23:21 (52308) DEBUG PluginLoader Loading plugins /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/mutators/index.js
+12:23:21 (52308) DEBUG InputFileResolver All input files: [
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/src/myModule.js",
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/test/myModule.test.js"
+]
+12:23:21 (52308) DEBUG InputFileResolver Files to mutate: [
+  "/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/src/myModule.js"
+]
+12:23:21 (52308) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:23:21 (52308) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:23:21 (52308) DEBUG Sandbox Creating a sandbox for files in /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/.stryker-tmp/sandbox5046969
+12:23:21 (52308) DEBUG Sandbox Creating test runner 0
+12:23:21 (52308) DEBUG ChildProcessProxy Starting /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 52344
+12:23:21 (52308) TRACE ChildProcessProxy /home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+            ^
+
+Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:946:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+      at process.emit (node:events:513:28)
+      at emit (node:internal/child_process:946:14)
+      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+}
+
+12:23:21 (52308) WARN ChildProcessProxy Child process [pid 52344] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+	            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+	            ^
+	
+	Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	    at process.emit (node:events:513:28)
+	    at emit (node:internal/child_process:946:14)
+	    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+	  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+	      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+	      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	      at process.emit (node:events:513:28)
+	      at emit (node:internal/child_process:946:14)
+	      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+	}
+	 ChildProcessCrashedError: Child process [pid 52344] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35
+	            throw new Exception_1.Exception(`Could not inject "${Class.name}"`, error);
+	            ^
+	
+	Exception [Error]: Could not inject "ChildProcessTestRunnerWorker". Inner error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:35:19)
+	    at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	    at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	    at process.emit (node:events:513:28)
+	    at emit (node:internal/child_process:946:14)
+	    at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+	  innerError: Error: Cannot load TestRunner plugin "mocha". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+	      at PluginLoader.resolve (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginLoader.js:40:19)
+	      at PluginCreator.create (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/di/PluginCreator.js:11:42)
+	      at new ChildProcessTestRunnerWorker (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js:13:14)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:32:20)
+	      at ValueProvider.injectClass (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/typed-inject/src/InjectorImpl.js:95:22)
+	      at ChildProcessProxyWorker.handleMessage (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxyWorker.js:43:45)
+	      at process.emit (node:events:513:28)
+	      at emit (node:internal/child_process:946:14)
+	      at processTicksAndRejections (node:internal/process/task_queues:84:21)
+	}
+	
+    at ChildProcessProxy.handleUnexpectedExit (/home/prateek/Desktop/MT2022080-MT2022078/my-mutation-testing-project/node_modules/stryker/src/child-proxy/ChildProcessProxy.js:150:33)
+    at ChildProcess.emit (node:events:513:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12) {
+  innerError: undefined,
+  pid: 52344,
+  exitCode: 1,
+  signal: null
+}
