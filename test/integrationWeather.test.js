@@ -4,6 +4,8 @@ const assert = require('assert');
 const WeatherService = require('../core/weather');
 
 describe('Integration Test - Weather Service', () => {
+  // Existing integration test cases
+
   it('should update and retrieve weather data for a location', () => {
     const weatherService = new WeatherService();
     weatherService.updateWeatherData('Tokyo', 22, 'Rainy');
@@ -15,5 +17,15 @@ describe('Integration Test - Weather Service', () => {
     assert.equal(condition, 'Rainy');
   });
 
-  // Add more integration tests as needed
+  it('should handle getting average temperature for a location in integration test', () => {
+    const weatherService = new WeatherService();
+    weatherService.updateWeatherData('Berlin', 20, 'Clear');
+    weatherService.updateWeatherData('Berlin', 22, 'Clear');
+    weatherService.updateWeatherData('Berlin', 18, 'Cloudy');
+    
+    const averageTemperature = weatherService.getAverageTemperature('Berlin');
+    assert.equal(averageTemperature, (20 + 22 + 18) / 3);
+  });
+
+  // Add more integration test cases as needed
 });
