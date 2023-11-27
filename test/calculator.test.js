@@ -1,7 +1,7 @@
 // calculator.test.js
 
 const assert = require('assert');
-const calculator = require('../src/calculator');
+const calculator = require('../core/calculator');
 
 describe('Unit Test - Calculator', () => {
   it('should add two numbers', () => {

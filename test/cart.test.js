@@ -1,7 +1,7 @@
 // cart.test.js
 
 const assert = require('assert');
-const ShoppingCart = require('../src/cart');
+const ShoppingCart = require('../core/cart');
 
 describe('Unit Test - Shopping Cart', () => {
   // ... (existing test cases)

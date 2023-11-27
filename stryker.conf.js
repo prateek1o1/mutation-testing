@@ -3,5 +3,5 @@ module.exports = {
       reporters: ["clear-text", "progress"],
       packageManager: "npm",
       coverageAnalysis: "off",
-      mutate: ["src/**/*.js"],
+      mutate: ["core/**/*.js"],
   };

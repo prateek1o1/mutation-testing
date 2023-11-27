@@ -1,7 +1,7 @@
 // stringOperations.test.js
 
 const assert = require('assert');
-const stringOperations = require('../src/stringOperations');
+const stringOperations = require('../core/stringOperations');
 
 describe('Unit Test - String Operations', () => {
   it('should concatenate two strings', () => {

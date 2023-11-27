@@ -1,7 +1,7 @@
 // auth.test.js
 
 const assert = require('assert');
-const Auth = require('../src/auth');
+const Auth = require('../core/auth');
 
 describe('Unit Test - Authentication Operations', () => {
   it('should register a new user', () => {

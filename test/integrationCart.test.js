@@ -1,7 +1,7 @@
 // integrationCart.test.js
 
 const assert = require('assert');
-const ShoppingCart = require('../src/cart');
+const ShoppingCart = require('../core/cart');
 
 describe('Integration Test - Shopping Cart Operations', () => {
   it('should add and remove items, and calculate total price', () => {

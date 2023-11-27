@@ -1,7 +1,7 @@
 // weather.test.js
 
 const assert = require('assert');
-const WeatherService = require('../src/weather');
+const WeatherService = require('../core/weather');
 
 describe('Unit Test - Weather Service', () => {
   it('should update weather data for a location', () => {

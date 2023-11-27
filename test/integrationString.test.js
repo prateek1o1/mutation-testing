@@ -1,7 +1,7 @@
 // integrationString.test.js
 
 const assert = require('assert');
-const stringOperations = require('../src/stringOperations');
+const stringOperations = require('../core/stringOperations');
 
 describe('Integration Test - String Operations', () => {
   it('should handle integration with concatenated and uppercase strings', () => {

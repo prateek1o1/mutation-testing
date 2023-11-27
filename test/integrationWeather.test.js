@@ -1,7 +1,7 @@
 // integrationWeather.test.js
 
 const assert = require('assert');
-const WeatherService = require('../src/weather');
+const WeatherService = require('../core/weather');
 
 describe('Integration Test - Weather Service', () => {
   it('should update and retrieve weather data for a location', () => {

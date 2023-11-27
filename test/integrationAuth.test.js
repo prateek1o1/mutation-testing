@@ -1,7 +1,7 @@
 // integrationAuth.test.js
 
 const assert = require('assert');
-const Auth = require('../src/auth');
+const Auth = require('../core/auth');
 
 describe('Integration Test - Authentication Operations', () => {
   it('should register a new user, log in, and check authentication status', () => {

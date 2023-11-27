@@ -1,7 +1,7 @@
 // integration.test.js
 
 const assert = require('assert');
-const calculator = require('../src/calculator');
+const calculator = require('../core/calculator');
 
 describe('Integration Test - Calculator', () => {
   it('should correctly perform multiple operations', () => {
