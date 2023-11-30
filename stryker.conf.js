@@ -1,6 +1,6 @@
 module.exports = {
     testRunner: "mocha",
-    reporters: ["clear-text", "progress", "html"],
+    reporters: ["clear-text", "progress", "html",'event-recorder'],
     packageManager: "npm",
     coverageAnalysis: "perTest",
     mutate: ["core/**/*.js"],
